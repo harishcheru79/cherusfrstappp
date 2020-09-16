@@ -12,6 +12,11 @@ app.use(express.json());
 app.use('/api/genres',genres);
 app.use('/api/customers',customers);
 
+app.get('/',(req,res) => {
+  res.send('Hello world!!');
+});
+
+
 mongoose.connect(process.env.CUSTOMCONNSTR_MyConnectionString || database.localUrl)
   .then(() => console.log('connected to mongodb'))
   .catch((err) => console.error('Not connected to mongo db',err));
