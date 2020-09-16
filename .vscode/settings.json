@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/4296e8e7-508f-451b-94a3-40c4f8f21029/resourceGroups/nodejs_express_app/providers/Microsoft.Web/sites/Cherusfrst",
+    "appService.deploySubpath": "."
+}
