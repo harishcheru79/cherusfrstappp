@@ -17,7 +17,7 @@ app.get('/',(req,res) => {
 });
 
 
-mongoose.connect(process.env.CUSTOMCONNSTR_MyConnectionString || database.localUrl)
+mongoose.connect(process.env.CUSTOMCONNSTR_MyConnectionStringcher || database.localUrl)
   .then(() => console.log('connected to mongodb'))
   .catch((err) => console.error('Not connected to mongo db',err));
 
