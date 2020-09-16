@@ -12,7 +12,7 @@ app.use(express.json());
 app.use('/api/genres',genres);
 app.use('/api/customers',customers);
 
-mongoose.connect(process.env.CUUSTOMCONNSTR_MyConnectionString || database.localUrl)
+mongoose.connect(process.env.CUSTOMCONNSTR_MyConnectionString || database.localUrl)
   .then(() => console.log('connected to mongodb'))
   .catch((err) => console.error('Not connected to mongo db',err));
 
